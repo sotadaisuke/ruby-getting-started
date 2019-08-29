@@ -56,4 +56,12 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get ':controller(/:action(/:id))'
+   root :to => 'say#hello'
+ 
+   post '/callback' => 'linebot#callback'
+ 
+   namespace :api do
+     resources :visitors, only: [:index, :create]
+   end 
 end
