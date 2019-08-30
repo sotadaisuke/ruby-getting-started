@@ -38,10 +38,19 @@ class LinebotController < ApplicationController
                  
                  if kinniku =="上腕二頭筋"
                      image_url="https://i1.wp.com/dbfactory.org/g-san/wp-content/uploads/middle_46ca9473-f2e0-46fe-aed8-0a8a12746d09.jpeg?w=486&ssl=1"
+                     
                 elsif kinniku =="上腕三頭筋"
                 image_url="https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/12365082/rectangle_large_type_2_a6a9b47a860ddb851b9da2d2005b9317.jpeg"
-                else 
-                image_url="https://img.huffingtonpost.com/asset/5c6319ba2500004401c7cd1e.jpeg?ops=scalefit_630_noupscale"
+                
+                elsif kinniku =="大胸筋"
+                image_url="https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/10285687/rectangle_large_type_2_73067d6d02038111b6e08df10daab063.jpeg"
+                
+                elsif kinniku =="三角筋"
+                image_url=https://kaitosawahara.com/wp-content/uploads/2018/12/kata-1.jpg""
+                
+                else 　kinniku =="腹直筋"
+                image_url="https://ag-skin.com/daily/doc/20190327060918.jpeg"
+                
                  end
              
              message = [
