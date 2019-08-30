@@ -55,16 +55,16 @@ class LinebotController < ApplicationController
             
             client.reply_message(event["replyToken"], message)
              
-             elsif 
+             elsif event.message["text"] =~ /プロテイン/
            message = [
              {
                type: "text",
-               text: event.message["プロテイン"]
+               text:  "筋肉を大きくしたい人👉https://www.amazon.co.jp/%E6%98%8E%E6%B2%BB-%E3%82%B6%E3%83%90%E3%82%B9-%E3%83%9B%E3%82%A8%E3%82%A4%E3%83%97%E3%83%AD%E3%83%86%E3%82%A4%E3%83%B3100-%E3%82%B3%E3%82%B3%E3%82%A2%E5%91%B3%E3%80%9050%E9%A3%9F%E5%88%86%E3%80%91-050g/dp/B013OOYZ9A/ref=asc_df_B013OOYZ9A/?tag=jpgo-22&linkCode=df0&hvadid=218012095897&hvpos=1o4&hvnetw=g&hvrand=17488479983901425006&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009280&hvtargid=pla-353571922240&psc=1&th=1&psc=1"
              },
              {
                type: "text",
-               text: "筋肉を大きくしたい人👉https://www.amazon.co.jp/%E6%98%8E%E6%B2%BB-%E3%82%B6%E3%83%90%E3%82%B9-%E3%83%9B%E3%82%A8%E3%82%A4%E3%83%97%E3%83%AD%E3%83%86%E3%82%A4%E3%83%B3100-%E3%82%B3%E3%82%B3%E3%82%A2%E5%91%B3%E3%80%9050%E9%A3%9F%E5%88%86%E3%80%91-050g/dp/B013OOYZ9A/ref=asc_df_B013OOYZ9A/?tag=jpgo-22&linkCode=df0&hvadid=218012095897&hvpos=1o4&hvnetw=g&hvrand=17488479983901425006&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1009280&hvtargid=pla-353571922240&psc=1&th=1&psc=1" + 
-               event.message["プロテイン"] + "筋肉密度を高めたい人👉https://jp.iherb.com/pr/Optimum-Nutrition-Micronized-Creatine-Powder-Unflavored-1-32-lb-600-g/68616?gclid=Cj0KCQjw753rBRCVARIsANe3o46i6MAbDa7OZh5sWQkNF4SKXUfCe9zOFSqfejm0hHTyWzG4qrQyFtYaAl3vEALw_wcB&gclsrc=aw.ds"
+               text: "筋肉密度を高めたい人👉https://jp.iherb.com/pr/Optimum-Nutrition-Micronized-Creatine-Powder-Unflavored-1-32-lb-600-g/68616?gclid=Cj0KCQjw753rBRCVARIsANe3o46i6MAbDa7OZh5sWQkNF4SKXUfCe9zOFSqfejm0hHTyWzG4qrQyFtYaAl3vEALw_wcB&gclsrc=aw.ds"
+              
              }
            ]
            client.reply_message(event["replyToken"], message)
