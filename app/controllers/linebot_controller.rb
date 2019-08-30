@@ -29,7 +29,11 @@ class LinebotController < ApplicationController
              message = [
                {
                  type: "text",
-                 text: ["大吉", "中吉", "小吉", "凶", "大凶"].shuffle.first + ".......だってさ！"
+                 text: ["プロテイン足りてる？", 
+                 "今日、ジム行く？",
+                 "アーノルド・シュワルツェネッガー",
+                 "ドウェイン・ジョンソン",
+                 "乳酸たまってる？"].shuffle.first + ".......だってさ！"
                }
              ]
              client.reply_message(event["replyToken"], message)
