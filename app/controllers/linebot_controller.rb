@@ -29,6 +29,7 @@ class LinebotController < ApplicationController
              
              
              if event.message['text'] =~ /上半身/
+                 image_url = "https://i1.wp.com/dbfactory.org/g-san/wp-content/uploads/middle_46ca9473-f2e0-46fe-aed8-0a8a12746d09.jpeg?w=486&ssl=1"
              message = [
                {
                  type: "text",
@@ -40,8 +41,8 @@ class LinebotController < ApplicationController
                },
                {
                    type: "image"
-                   originalContentUrl:https://www.google.com/search?q=%E4%B8%8A%E8%85%95%E4%BA%8C%E9%A0%AD%E7%AD%8B%E3%80%80jpeg&rlz=1C1PDZP_jaJP864&source=lnms&tbm=isch&sa=X&ved=0ahUKEwj6nKqv66nkAhXhLqYKHaVoBeAQ_AUIESgB&biw=1368&bih=753#imgrc=JWe0GekJzT20SM:
-                   previewImageUrl:https://i1.wp.com/dbfactory.org/g-san/wp-content/uploads/middle_46ca9473-f2e0-46fe-aed8-0a8a12746d09.jpeg?w=486&ssl=1
+                   originalContentUrl: image_url
+                   previewImageUrl: image_url
                }
              ]
             
