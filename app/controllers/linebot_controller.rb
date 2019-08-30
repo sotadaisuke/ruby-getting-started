@@ -74,6 +74,23 @@ class LinebotController < ApplicationController
              }
            ]
            client.reply_message(event["replyToken"], message)
+           
+           elsif event.message["text"] =~ /筋トレ/
+           message = [
+             {
+               type: "text",
+               text:"大胸筋を鍛えるのにおすすめな筋トレ方法はこれ！👉https://mens-modern.jp/400"
+             },
+             {
+               type: "text",
+               text: "腹筋を鍛えるのにおすすめな筋トレ方法はこれ！👉https://smartlog.jp/53054"
+             },
+               {
+               type: "text",
+               text:"背筋を鍛えるのにおすすめな筋トレ方法はこれ！👉https://smartlog.jp/71258"
+             }
+           ]
+           client.reply_message(event["replyToken"], message)
 
              else message = [
                {
