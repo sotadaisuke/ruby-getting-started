@@ -78,7 +78,7 @@ class LinebotController < ApplicationController
                   if kinniku2 =="大殿筋(お尻の筋肉)"
                      image_url2="https://www.michibiki-blog.com/wp-content/uploads/2019/05/1026E723-1973-49E7-9DE8-FB85DDB3D734.jpeg"
                      
-                elsif kinniku2 =="大腿四頭筋"
+                elsif kinniku2 =="大腿四頭筋(太ももの筋肉)"
                 image_url2="https://danlead.jp/wp-content/uploads/2019/04/AdobeStock_87141450.jpeg"
                 
                 elsif kinniku2 =="ヒラメ筋💓"
