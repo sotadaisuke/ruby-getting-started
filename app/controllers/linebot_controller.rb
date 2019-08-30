@@ -33,11 +33,8 @@ class LinebotController < ApplicationController
                  text: ["大吉", "中吉", "小吉", "凶", "大凶"].shuffle.first + ".......だってさ！"
                }
              ]
+             client.reply_message(event["replyToken"], message)
              
-             
-               
-             
-
            when Line::Bot::Event::MessageType::Location
              message = {
                type: "location",
