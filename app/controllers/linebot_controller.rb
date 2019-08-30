@@ -46,7 +46,7 @@ class LinebotController < ApplicationController
                 image_url="https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/10285687/rectangle_large_type_2_73067d6d02038111b6e08df10daab063.jpeg"
                 
                 elsif kinniku =="三角筋"
-                image_url=https://kaitosawahara.com/wp-content/uploads/2018/12/kata-1.jpg""
+                image_url="https://kaitosawahara.com/wp-content/uploads/2018/12/kata-1.jpg"
                 
                 else 　kinniku =="腹直筋"
                 image_url="https://ag-skin.com/daily/doc/20190327060918.jpeg"
