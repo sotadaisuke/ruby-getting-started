@@ -78,17 +78,15 @@ class LinebotController < ApplicationController
                   if kinniku2 =="大殿筋(お尻の筋肉)"
                      image_url2="https://i1.wp.com/dbfactory.org/g-san/wp-content/uploads/middle_46ca9473-f2e0-46fe-aed8-0a8a12746d09.jpeg?w=486&ssl=1"
                      
-                elsif kinniku2 =="上腕三頭筋"
-                image_url2="https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/12365082/rectangle_large_type_2_a6a9b47a860ddb851b9da2d2005b9317.jpeg"
+                elsif kinniku2 =="大腿四頭筋"
+                image_url2="https://danlead.jp/wp-content/uploads/2019/04/AdobeStock_87141450.jpeg"
                 
-                elsif kinniku2 =="大胸筋"
-                image_url2="https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/10285687/rectangle_large_type_2_73067d6d02038111b6e08df10daab063.jpeg"
+                elsif kinniku2 =="ヒラメ筋"
+                image_url2="https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/7552515/rectangle_large_type_2_c06a6cab847dc10cb9502c14d7ea7156.jpg"
                 
-                elsif kinniku2 =="三角筋"
-                image_url2="https://kaitosawahara.com/wp-content/uploads/2018/12/kata-1.jpg"
+                elsif kinniku2 =="ハムストリングス"
+                image_url2="https://bodymakingtips.com/wp-content/uploads/2014/07/Hamstrings-workout-neveux.jpg"
                 
-                else 　
-                image_url2="https://ag-skin.com/daily/doc/20190327060918.jpeg"
                 
                  end
              
