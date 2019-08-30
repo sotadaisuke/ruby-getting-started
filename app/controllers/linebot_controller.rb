@@ -36,7 +36,33 @@ class LinebotController < ApplicationController
                  "乳酸たまってる？"].shuffle.first
                }
              ]
+             
+             if event.message['text'] =~ /上半身/
+             message = [
+               {
+                 type: "text",
+                 text: ["上腕二頭筋",
+                 "上腕三頭筋",
+                 "大胸筋",
+                 "三角筋",
+                 "腹直筋"].shuffle.first 
+               }
+             ]
+            
+            else event.message['text'] =~ /下半身/
+             message = [
+               {
+                 type: "text",
+                 text: ["大殿筋(お尻の筋肉)",
+                 "大腿四頭筋(太ももの筋肉)",
+                 "ヒラメ筋💓",
+                 "ハムストリングス"].shuffle.first 
+               }
+             ]
+            
              client.reply_message(event["replyToken"], message)
+            end
+         
            when Line::Bot::Event::MessageType::Location
              message = {
                type: "location",
