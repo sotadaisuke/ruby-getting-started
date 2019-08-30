@@ -33,7 +33,7 @@ class LinebotController < ApplicationController
                  "今日、ジム行く？",
                  "アーノルド・シュワルツェネッガー",
                  "ドウェイン・ジョンソン",
-                 "乳酸たまってる？"].shuffle.first + ".......だってさ！"
+                 "乳酸たまってる？"].shuffle.first
                }
              ]
              client.reply_message(event["replyToken"], message)
