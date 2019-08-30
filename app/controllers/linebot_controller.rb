@@ -48,7 +48,7 @@ class LinebotController < ApplicationController
                 elsif kinniku =="三角筋"
                 image_url="https://kaitosawahara.com/wp-content/uploads/2018/12/kata-1.jpg"
                 
-                else　
+                elsif kinniku =="腹直筋"
                 image_url="https://ag-skin.com/daily/doc/20190327060918.jpeg"
                 
                  end
