@@ -40,8 +40,8 @@ class LinebotController < ApplicationController
                  "腹直筋"].shuffle.first 
                },
                {
-                   type: "image"
-                   originalContentUrl: image_url
+                   type: "image",
+                   originalContentUrl: image_url,
                    previewImageUrl: image_url
                }
              ]
