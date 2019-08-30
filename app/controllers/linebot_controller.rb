@@ -68,42 +68,39 @@ class LinebotController < ApplicationController
              client.reply_message(event["replyToken"], message)
                
             elsif event.message['text'] =~ /下半身/
-             message = [
-               {
-                 type: "text",
-                 text: ["大殿筋(お尻の筋肉)",
+             kinniku2 = ["大殿筋(お尻の筋肉)",
                  "大腿四頭筋(太ももの筋肉)",
                  "ヒラメ筋💓",
                  "ハムストリングス"].shuffle.first 
                  
                  
                  
-                  if kinniku =="大殿筋(お尻の筋肉)"
-                     image_url="https://i1.wp.com/dbfactory.org/g-san/wp-content/uploads/middle_46ca9473-f2e0-46fe-aed8-0a8a12746d09.jpeg?w=486&ssl=1"
+                  if kinniku2 =="大殿筋(お尻の筋肉)"
+                     image_ur2l="https://i1.wp.com/dbfactory.org/g-san/wp-content/uploads/middle_46ca9473-f2e0-46fe-aed8-0a8a12746d09.jpeg?w=486&ssl=1"
                      
-                elsif kinniku =="上腕三頭筋"
-                image_url="https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/12365082/rectangle_large_type_2_a6a9b47a860ddb851b9da2d2005b9317.jpeg"
+                elsif kinniku2 =="上腕三頭筋"
+                image_url2="https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/12365082/rectangle_large_type_2_a6a9b47a860ddb851b9da2d2005b9317.jpeg"
                 
-                elsif kinniku =="大胸筋"
-                image_url="https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/10285687/rectangle_large_type_2_73067d6d02038111b6e08df10daab063.jpeg"
+                elsif kinniku2 =="大胸筋"
+                image_url2="https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/10285687/rectangle_large_type_2_73067d6d02038111b6e08df10daab063.jpeg"
                 
-                elsif kinniku =="三角筋"
-                image_url="https://kaitosawahara.com/wp-content/uploads/2018/12/kata-1.jpg"
+                elsif kinniku2 =="三角筋"
+                image_url2="https://kaitosawahara.com/wp-content/uploads/2018/12/kata-1.jpg"
                 
                 else 　
-                image_url="https://ag-skin.com/daily/doc/20190327060918.jpeg"
+                image_url2="https://ag-skin.com/daily/doc/20190327060918.jpeg"
                 
                  end
              
              message = [
                {
                  type: "text",
-                 text: kinniku
+                 text: kinniku2
                },
                {
                    type: "image",
-                   originalContentUrl: image_url,
-                   previewImageUrl: image_url
+                   originalContentUrl: image_url2,
+                   previewImageUrl: image_url2
                }
              ]
             
