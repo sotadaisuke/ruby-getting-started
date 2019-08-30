@@ -81,7 +81,7 @@ class LinebotController < ApplicationController
                 elsif kinniku2 =="大腿四頭筋"
                 image_url2="https://danlead.jp/wp-content/uploads/2019/04/AdobeStock_87141450.jpeg"
                 
-                elsif kinniku2 =="ヒラメ筋"
+                elsif kinniku2 =="ヒラメ筋💓"
                 image_url2="https://d2l930y2yx77uc.cloudfront.net/production/uploads/images/7552515/rectangle_large_type_2_c06a6cab847dc10cb9502c14d7ea7156.jpg"
                 
                 elsif kinniku2 =="ハムストリングス"
