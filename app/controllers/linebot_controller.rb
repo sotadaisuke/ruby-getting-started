@@ -36,6 +36,7 @@ class LinebotController < ApplicationController
                  "乳酸たまってる？"].shuffle.first
                }
              ]
+             client.reply_message(event["replyToken"], message)
              
              if event.message['text'] =~ /上半身/
              message = [
@@ -49,6 +50,8 @@ class LinebotController < ApplicationController
                }
              ]
             
+             client.reply_message(event["replyToken"], message)
+               
             else event.message['text'] =~ /下半身/
              message = [
                {
@@ -60,7 +63,8 @@ class LinebotController < ApplicationController
                }
              ]
             
-             client.reply_message(event["replyToken"], message)
+            client.reply_message(event["replyToken"], message)
+             
             end
          
            when Line::Bot::Event::MessageType::Location
