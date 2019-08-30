@@ -29,15 +29,18 @@ class LinebotController < ApplicationController
              
              
              if event.message['text'] =~ /上半身/
+                 kinniku= ["上腕二頭筋",
+                 "上腕三頭筋",
+                 "大胸筋",
+                 "三角筋",
+                 "腹直筋"].shuffle.first
+                 
+                 
                  image_url = "https://i1.wp.com/dbfactory.org/g-san/wp-content/uploads/middle_46ca9473-f2e0-46fe-aed8-0a8a12746d09.jpeg?w=486&ssl=1"
              message = [
                {
                  type: "text",
-                 text: ["上腕二頭筋",
-                 "上腕三頭筋",
-                 "大胸筋",
-                 "三角筋",
-                 "腹直筋"].shuffle.first 
+                 text: kinniku
                },
                {
                    type: "image",
