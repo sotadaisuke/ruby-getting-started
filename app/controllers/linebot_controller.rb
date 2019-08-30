@@ -26,17 +26,7 @@ class LinebotController < ApplicationController
          when Line::Bot::Event::Message
            case event.type
            when Line::Bot::Event::MessageType::Text
-             message = [
-               {
-                 type: "text",
-                 text: ["プロテイン足りてる？", 
-                 "今日、ジム行く？",
-                 "アーノルド・シュワルツェネッガー",
-                 "ドウェイン・ジョンソン",
-                 "乳酸たまってる？"].shuffle.first
-               }
-             ]
-             client.reply_message(event["replyToken"], message)
+             
              
              if event.message['text'] =~ /上半身/
              message = [
@@ -52,7 +42,7 @@ class LinebotController < ApplicationController
             
              client.reply_message(event["replyToken"], message)
                
-            else event.message['text'] =~ /下半身/
+            elsif event.message['text'] =~ /下半身/
              message = [
                {
                  type: "text",
@@ -65,6 +55,17 @@ class LinebotController < ApplicationController
             
             client.reply_message(event["replyToken"], message)
              
+             else message = [
+               {
+                 type: "text",
+                 text: ["プロテイン足りてる？", 
+                 "今日、ジム行く？",
+                 "アーノルド・シュワルツェネッガー",
+                 "ドウェイン・ジョンソン",
+                 "乳酸たまってる？"].shuffle.first
+               }
+             ]
+             client.reply_message(event["replyToken"], message)
             end
          
            when Line::Bot::Event::MessageType::Location
