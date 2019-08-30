@@ -26,15 +26,7 @@ class LinebotController < ApplicationController
          when Line::Bot::Event::Message
            case event.type
            when Line::Bot::Event::MessageType::Text
-               if event.message['text'] =~ /おみくじ/
-             message = [
-               {
-                 type: "text",
-                 text: ["大吉", "中吉", "小吉", "凶", "大凶"].shuffle.first + ".......だってさ！"
-               }
-             ]
-            end
-            
+             
              
            when Line::Bot::Event::MessageType::Location
              message = {
@@ -46,6 +38,15 @@ class LinebotController < ApplicationController
              }
              client.reply_message(event["replyToken"], message)
            end
+           if event.message['text'] =~ /おみくじ/
+             message = [
+               {
+                 type: "text",
+                 text: ["大吉", "中吉", "小吉", "凶", "大凶"].shuffle.first + ".......だってさ！"
+               }
+             ]
+            end
+            
          end
        }
    
